@@ -21,7 +21,7 @@ This repository presents a novel approach to the discretisation and solution of 
 
 ## Results:
 
-![Demo](Amin-Nadimy/Advection_Diffusion_NN4PDEs/Documents/adv_diff.gif)
+![Demo](https://github.com/Amin-Nadimy/Advection_Diffusion_NN4PDEs/blob/main/Documents/adv_diff.gif)
 
 ## Contact and references
 For more information please get in touch with me via:
