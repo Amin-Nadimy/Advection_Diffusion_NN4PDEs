@@ -1,4 +1,4 @@
-# Modelling Advection-Diffusion Equation using NN4PDEs
+# Modelling the Advection-Diffusion Equation using NN4PDEs
 
 This repository presents a novel approach to the discretisation and solution of the advection-diffusion equation using finite difference (FD), finite volume (FV), and finite element methods (FE). This method reformulates the discretised system of equations as a discrete convolution, analogous to a convolutional layer in a neural network, and solves it using The Jacobi and Gauss-Seidel Iterative Methods.
 
