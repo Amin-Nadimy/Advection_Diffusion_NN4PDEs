@@ -17,7 +17,7 @@ This repository presents a novel approach to the discretisation and solution of 
 - The resolution in this case is 1 m in x and y directions.
 - 
 
-![Boundary Layer](https://github.com/Amin-Nadimy/City-Scale-Atmospheric-Boundary-Layer/blob/main/Documents/South_Kensington.jpg)
+![Initial Condition](https://github.com/Amin-Nadimy/Advection_Diffusion_NN4PDEs/blob/main/Documents/initial.jpg)
 
 
 ## Contact and references
