@@ -1,5 +1,8 @@
 # Modelling the Advection-Diffusion Equation using NN4PDEs
 
+[![tests](https://github.com/Amin-Nadimy/Advection_Diffusion_NN4PDEs/actions/workflows/tests.yml/badge.svg)](https://github.com/Amin-Nadimy/Advection_Diffusion_NN4PDEs/actions/workflows/tests.yml)
+
+
 This repository presents a novel approach to the discretisation and solution of the advection-diffusion equation using finite difference (FD), finite volume (FV), and finite element methods (FE). This method reformulates the discretised system of equations as a discrete convolution, analogous to a convolutional layer in a neural network, and solves it using The Jacobi and Gauss-Seidel Iterative Methods.
 
 ## Key Features:
@@ -22,6 +25,27 @@ This repository presents a novel approach to the discretisation and solution of 
 ## Results:
 
 ![Demo](https://github.com/Amin-Nadimy/Advection_Diffusion_NN4PDEs/blob/main/Documents/adv_diff.gif)
+
+## Tests
+
+The discretisation is also available as an importable module, `nn4pdes_advdiff.py`, with the same filters and time step as the script in `Python Code/`. The tests in `tests/` check the physics of the scheme:
+
+- each stencil annihilates a constant field (no mass created or destroyed),
+- the Laplacian stencil returns exactly 2 for f = x²,
+- the derivative stencils are exact for linear fields,
+- total mass is conserved while the blob is inside the domain,
+- the explicit scheme stays finite and bounded at the script's CFL number,
+- pure diffusion lowers the peak and widens the blob,
+- any grid size works and GPU results match CPU results.
+
+Run them with:
+
+```bash
+pip install torch pytest
+pytest -q
+```
+
+They also run automatically on every push through GitHub Actions (`.github/workflows/tests.yml`).
 
 ## Contact and references
 For more information please get in touch with me via:
