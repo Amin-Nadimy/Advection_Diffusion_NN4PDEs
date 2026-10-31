@@ -19,4 +19,4 @@ jobs:
           pip install torch --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements-dev.txt
       - name: Run the tests
-        run: pytest -q
+        run: pytest -v
